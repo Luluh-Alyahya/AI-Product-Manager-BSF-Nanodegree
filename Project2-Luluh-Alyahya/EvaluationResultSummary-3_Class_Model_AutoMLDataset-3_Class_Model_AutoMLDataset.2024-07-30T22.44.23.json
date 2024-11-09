@@ -1,0 +1,98 @@
+{
+  "AggregatedEvaluationResults": {
+    "ConfusionMatrix": [
+      {
+        "GroundTruthLabel": "bacterial_pneumonia",
+        "PredictedLabel": "bacterial_pneumonia",
+        "Value": 0.65
+      },
+      {
+        "GroundTruthLabel": "bacterial_pneumonia",
+        "PredictedLabel": "normal",
+        "Value": 0.1
+      },
+      {
+        "GroundTruthLabel": "bacterial_pneumonia",
+        "PredictedLabel": "viral_pneumonia",
+        "Value": 0.25
+      },
+      {
+        "GroundTruthLabel": "normal",
+        "PredictedLabel": "bacterial_pneumonia",
+        "Value": 0.0
+      },
+      {
+        "GroundTruthLabel": "normal",
+        "PredictedLabel": "normal",
+        "Value": 1.0
+      },
+      {
+        "GroundTruthLabel": "normal",
+        "PredictedLabel": "viral_pneumonia",
+        "Value": 0.0
+      },
+      {
+        "GroundTruthLabel": "viral_pneumonia",
+        "PredictedLabel": "bacterial_pneumonia",
+        "Value": 0.0
+      },
+      {
+        "GroundTruthLabel": "viral_pneumonia",
+        "PredictedLabel": "normal",
+        "Value": 0.15
+      },
+      {
+        "GroundTruthLabel": "viral_pneumonia",
+        "PredictedLabel": "viral_pneumonia",
+        "Value": 0.85
+      }
+    ],
+    "F1Score": 0.9130208514033931,
+    "Precision": 0.9486461251167132,
+    "Recall": 0.8833333333333334
+  },
+  "EvaluationDetails": {
+    "EvaluationEndTimestamp": "2024-07-30T19:58:09.467776",
+    "Labels": [
+      "bacterial_pneumonia",
+      "viral_pneumonia",
+      "normal"
+    ],
+    "NumberOfTestingImages": 60,
+    "NumberOfTrainingImages": 237,
+    "ProjectVersionArn": "arn:aws:rekognition:us-east-1:477259390475:project/3_Class_Model_AutoMLDataset/version/3_Class_Model_AutoMLDataset.2024-07-30T22.44.23/1722368662923"
+  },
+  "LabelEvaluationResults": [
+    {
+      "Label": "normal",
+      "Metrics": {
+        "F1Score": 0.9473684210526316,
+        "Precision": 1.0,
+        "Recall": 0.9,
+        "Threshold": 0.95134
+      },
+      "NumberOfTestingImages": 20
+    },
+    {
+      "Label": "bacterial_pneumonia",
+      "Metrics": {
+        "F1Score": 0.9268292682926829,
+        "Precision": 0.9047619047619048,
+        "Recall": 0.95,
+        "Threshold": 0.21094
+      },
+      "NumberOfTestingImages": 20
+    },
+    {
+      "Label": "viral_pneumonia",
+      "Metrics": {
+        "F1Score": 0.8648648648648648,
+        "Precision": 0.9411764705882353,
+        "Recall": 0.8,
+        "Threshold": 0.76492
+      },
+      "NumberOfTestingImages": 20
+    }
+  ],
+  "Version": 1
+}
